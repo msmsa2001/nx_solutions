@@ -2003,7 +2003,8 @@ section {
   color: var(--rr-heading-primary);
   font-weight: var(--rr-fw-bold);
   font-style: normal;
-  font-size: var(--rr-fs-h2);
+  /* font-size: var(--rr-fs-h2); */
+  font-size: 33px;
   line-height: var(--rr-lh-h2);
   letter-spacing: -0.04em;
   margin-bottom: 0;
@@ -19121,21 +19122,22 @@ body .ui-tooltip {
   background: #EDF0F7;
   position: relative;
   z-index: 1;
+  padding-left: 2rem;
 }
 .generative-ai-8__content {
-  padding-top: 150px;
-  padding-bottom: 180px;
+  padding-top: 32px;
+  padding-bottom: 0px;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .generative-ai-8__content {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 32px;
+    padding-bottom: 38px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .generative-ai-8__content {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 32px;
+    padding-bottom: 38px;
   }
 }
 .generative-ai-8__content__list {
@@ -25862,13 +25864,13 @@ START: Slider CSS
 .image-generation-sidebar-box .item:last-child {
   margin-bottom: 0;
 }
-.image-generation-sidebar-box .item:hover {
+.image-generation-sidebar-box .item:hover,.image-generation-sidebar-box .item.active {
   background: var(--rr-theme-primary);
 }
-.image-generation-sidebar-box .item:hover .name {
+.image-generation-sidebar-box .item:hover .name,.image-generation-sidebar-box .item.active .name {
   color: var(--rr-heading-primary);
 }
-.image-generation-sidebar-box .item:hover .icon {
+.image-generation-sidebar-box .item:hover .icon,.image-generation-sidebar-box .item.active .icon {
   transform: rotate(0);
 }
 .image-generation-sidebar-box .item .name {
