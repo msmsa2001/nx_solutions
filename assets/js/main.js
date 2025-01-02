@@ -1611,3 +1611,26 @@
 
 
 })(jQuery);
+
+document.querySelectorAll('.blog__item-thumb button').forEach(button => {
+    button.addEventListener('click', () => {
+        console.log("Button clicked"); // Debugging to check if the click event works
+        
+        // Get the image inside the .blog__item-thumb
+        const image = button.closest('.blog__item-thumb').querySelector('img');
+        
+        const modal = document.querySelector('.popup-image');
+        const modalImg = modal.querySelector('img');
+        
+        // Show the modal
+        modal.style.display = 'block';
+        
+        // Set the modal image source
+        modalImg.src = image.src;
+    });
+});
+
+// Close modal when the '×' (span) is clicked
+document.querySelector('.popup-image span').addEventListener('click', () => {
+    document.querySelector('.popup-image').style.display = 'none';
+});

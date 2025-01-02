@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  src: url('/assets/fonts/fa-solid-900.ttf') format('truetype');
+}
 /*-----------------------------------------------------------------------------------
 
     Template Name: Artificial Intelligence Startup HTML5 Template
@@ -9747,7 +9751,29 @@ body .ui-tooltip {
 .blog__item-thumb-2 {
   position: relative;
 }
-.blog__item-thumb-2::before {
+.blog__item-thumb-2 .button{
+  position: absolute;
+  top: 0rem;
+  z-index: 100;
+  background: rgba(44, 43, 43, 0.308);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  display: none;
+ transition: ease-out;
+}
+.blog__item-thumb-2 .button button{
+  background: #F36D00;
+  padding: 8.5px 20.1px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+}
+.blog__item-thumb-2:hover .button{
+  display: grid !important;
+}
+.blog__item-thumb-2::before, .blog__item-thumb-2 .button::before {
   background: var(--rr-background-pastel-blue);
   position: absolute;
   width: 140px;
@@ -9782,6 +9808,61 @@ body .ui-tooltip {
   font-style: normal;
   letter-spacing: -0.03em;
   transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+/* modal  */
+.blog__area .popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: none;
+}
+
+.blog__area .popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+
+.blog__area .popup-image span {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* Ensure the images inside .blog__item-thumb are responsive */
+.blog__item-thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Additional styles for buttons */
+.button button {
+  background: #F36D00;
+  padding: 8.5px 20.1px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 992px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .blog__item-title a br {
