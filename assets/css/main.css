@@ -2,6 +2,9 @@
   font-family: 'Font Awesome 5 Free';
   src: url('/assets/fonts/fa-solid-900.ttf') format('truetype');
 }
+*{
+  scroll-behavior: smooth
+}
 /*-----------------------------------------------------------------------------------
 
     Template Name: Artificial Intelligence Startup HTML5 Template
@@ -434,6 +437,7 @@ input[type=email],
 input[type=tel],
 input[type=number],
 input[type=password],
+input[type=file],
 textarea {
   background-color: var(--rr-common-white);
   color: var(--rr-heading-primary);
@@ -6134,7 +6138,7 @@ body .ui-tooltip {
 .header-8 .header-8__right .header__action .contact a:hover {
   color: var(--rr-theme-primary8) !important;
 }
-.header-8 .header-8__right .header-8__btn .rr-btn {
+.header-8 .header-8__right .header-8__btn .rr-btn, #apply {
   /* background: var(--rr-theme-primary8); */
   background: #F36D00;
   padding: 12.5px 28.1px;
@@ -9240,10 +9244,10 @@ body .ui-tooltip {
 }
 .main-menu-2.main-menu-5 ul li.active > a.main-menu ul li.has-dropdown > a::after {
   background-image: none;
-  font-family: "Font Awesome 6 Pro";
+  font-family: "Font Awesome 5 Free";
   font-size: 12px;
   font-weight: var(--rr-fw-bold);
-  content: "\f107";
+  content: "\f078";
   position: absolute;
   top: 33% !important;
   right: 11px;
@@ -19131,6 +19135,7 @@ body .ui-tooltip {
 }
 .trailblazing-ai-8__thumb img {
   width: inherit;
+ 
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .trailblazing-ai-8__thumb img {
@@ -19146,6 +19151,7 @@ body .ui-tooltip {
 .trailblazing-ai-8__content__right {
   margin-left: 80px;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 992px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .trailblazing-ai-8__content__right {
     margin-left: 0;
