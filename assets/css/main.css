@@ -2256,7 +2256,7 @@ section {
 /*  2.7 breadcrumb
 /*----------------------------------------*/
 .breadcrumb__area {
-  background: #151515;
+  /* background: #151515; */
   padding: 170px 0 122px;
   background-size: cover;
   background-position: center;
@@ -2293,44 +2293,12 @@ section {
 .breadcrumb__shapes-shape-1 {
   position: absolute;
   width: 738px;
-  height: 738px;
+  height: 70vh;
   left: -116px;
   top: -115px;
-  background: #F36D00;
-  filter: blur(300px);
   border-radius: 50%;
 }
-.breadcrumb__shapes-shape-2 {
-  position: absolute;
-  width: 738px;
-  height: 738px;
-  left: 425px;
-  top: 144px;
-  background: #fff;
-  filter: blur(300px);
-  border-radius: 50%;
-}
-.breadcrumb__shapes-shape-3 {
-  position: absolute;
-  width: 738px;
-  height: 738px;
-  right: 442px;
-  top: -212px;
-  background: #fff;
-  filter: blur(300px);
-  border-radius: 50%;
-}
-.breadcrumb__shapes-shape-4 {
-  position: absolute;
-  width: 738px;
-  height: 738px;
-  left: 1220px;
-  top: 144px;
-  background: #fff;
-  filter: blur(300px);
-  border-radius: 50%;
-  z-index: 1;
-}
+
 .breadcrumb__shapes-shape-5 {
   position: absolute;
   top: 103px;
@@ -2377,7 +2345,7 @@ section {
   font-weight: var(--rr-fw-bold);
   font-size: var(--rr-fs-h1);
   line-height: var(--rr-lh-h1);
-  color: var(--rr-common-white);
+  /* color: var(--rr-common-white); */
   letter-spacing: -0.03em;
   text-transform: inherit;
   position: relative;
@@ -2443,7 +2411,7 @@ section {
   top: 55.8888%;
   font-family: var(--rr-ff-fontawesome);
   inset-inline-end: -29px;
-  color: var(--rr-common-white);
+  /* color: var(--rr-common-white); */
   font-size: 16px;
   font-style: normal;
   font-weight: var(--rr-fw-bold);
@@ -2452,7 +2420,7 @@ section {
 .breadcrumb__menu ul li span a {
   font-family: var(--rr-ff-body);
   font-weight: var(--rr-fw-sbold);
-  color: var(--rr-common-white);
+  /* color: var(--rr-common-white); */
   font-style: normal;
   font-size: 16px;
   line-height: var(--rr-lh-h3);
@@ -2471,7 +2439,7 @@ section {
 .breadcrumb__menu ul li.active span {
   font-family: var(--rr-ff-body);
   font-weight: var(--rr-fw-sbold);
-  color: var(--rr-common-white);
+  /* color: var(--rr-common-white); */
   font-style: normal;
   font-size: 16px;
   line-height: var(--rr-lh-h3);
