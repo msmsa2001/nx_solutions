@@ -8191,8 +8191,9 @@ body .ui-tooltip {
     position: inherit;
   }
 }
-.banner8__thumb img {
+.banner8__thumb img,.faq-8__thumb-media img  {
   width: inherit;
+  width: 85%;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .banner8__thumb img {
@@ -14983,9 +14984,9 @@ body .ui-tooltip {
     padding-right: 0;
   }
 }
-.faq-8__thumb-media img {
+/* .faq-8__thumb-media img {
   width: inherit;
-}
+} */
 .faq-8 .ask-question-4__faq-4 .accordion-item {
   border-radius: 10px;
 }
