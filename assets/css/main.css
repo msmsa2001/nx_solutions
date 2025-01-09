@@ -2257,7 +2257,10 @@ section {
 /*----------------------------------------*/
 .breadcrumb__area {
   padding: 170px 0 122px;
-  background: linear-gradient(180deg, #EDF0F7 0%, red 100%);
+  /* background: linear-gradient(180deg, #EDF0F7 0%, #ff5733 100%); */
+  background: linear-gradient(329deg, rgba(255, 64.29, 0, 0.90) 0%, rgba(236.94, 217.09, 191.52, 0.90) 100%);
+  
+
 }
 
 /*  */
