@@ -2256,40 +2256,11 @@ section {
 /*  2.7 breadcrumb
 /*----------------------------------------*/
 .breadcrumb__area {
-  /* background: #151515; */
   padding: 170px 0 122px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 20px 20px 0 20px;
+  background: linear-gradient(180deg, #EDF0F7 0%, red 100%);
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 992px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .breadcrumb__area {
-    margin: 0;
-  }
-}
-.breadcrumb__before::before {
-  background: var(--rr-common-white);
-  position: absolute;
-  width: 570px;
-  height: 130px;
-  content: "";
-  right: 0;
-  bottom: -56px;
-  clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
-  z-index: 2;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 992px) {
-  .breadcrumb__before::before {
-    width: 370px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .breadcrumb__before::before {
-    clip-path: polygon(20% 0%, 100% 0, 100% 100%, -14% 100%);
-    width: 240px;
-  }
-}
+
+/*  */
 .breadcrumb__shapes-shape-1 {
   position: absolute;
   width: 738px;
@@ -2327,17 +2298,13 @@ section {
 .breadcrumb__shapes-shape-9 {
   position: absolute;
   bottom: 0;
-  right: 311px;
+  right: 100px;
   z-index: 2;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 992px) {
+
+@media (max-width: 576px){
   .breadcrumb__shapes-shape-9 {
-    right: 152px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .breadcrumb__shapes-shape-9 {
-    display: none;
+    width: 200px;
   }
 }
 .breadcrumb__title {
@@ -8001,24 +7968,9 @@ body .ui-tooltip {
 /*  3.1 banner Style 4
 /*----------------------------------------*/
 .banner8__area {
-  padding: 256px 0 244px 0;
+  padding: 100px 0 100px 0;
   position: relative;
   background: linear-gradient(180deg, #EDF0F7 0%, #FFFFFF 100%);
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .banner8__area {
-    padding: 200px 0 120px 0;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  .banner8__area {
-    padding: 200px 0 80px 0;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .banner8__area {
-    padding: 140px 0 70px 0;
-  }
 }
 .banner8__title-wrapper-title {
   font-size: 90px;
@@ -8134,31 +8086,7 @@ body .ui-tooltip {
 .banner8__shapes-shape-6 img {
   width: inherit;
 }
-.banner8__thumb {
-  position: absolute;
-  bottom: 178px;
-  right: 15.7%;
-}
-@media only screen and (min-width: 1600px) and (max-width: 1700px) {
-  .banner8__thumb {
-    right: 10%;
-  }
-}
-@media only screen and (min-width: 1400px) and (max-width: 1600px) {
-  .banner8__thumb {
-    right: 4.7%;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .banner8__thumb {
-    right: 3%;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 992px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .banner8__thumb {
-    position: inherit;
-  }
-}
+
 .banner8__thumb img,.faq-8__thumb-media img  {
   width: inherit;
   width: 85%;
