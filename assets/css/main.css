@@ -6078,7 +6078,8 @@ body .ui-tooltip {
 }
 .header-8 .header-8__right .header-8__btn .rr-btn, #apply {
   /* background: var(--rr-theme-primary8); */
-  background: #F36D00;
+  /* background: #F36D00; */
+  background: #050513;
   padding: 12.5px 28.1px;
   color: #fff;
   font-size: 16px;
