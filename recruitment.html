@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Novel Nex Solutions</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Presento
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .about-meta {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.about .about-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .about .about-title {
+    font-size: 2rem;
+  }
+}
+
+.about .about-description {
+  margin-bottom: 2rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.about .feature-list-wrapper {
+  margin-bottom: 2rem;
+}
+
+.about .feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about .feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.about .feature-list li i {
+  color: var(--accent-color);
+  font-size: 1.25rem;
+}
+
+.about .profile .profile-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about .profile .profile-name {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.about .profile .profile-position {
+  color: var(--accent-color);
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.about .contact-info {
+  padding: 1rem 1.5rem;
+  background-color: var(--surface-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+}
+
+.about .contact-info i {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+}
+
+.about .contact-info .contact-label {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.about .contact-info .contact-number {
+  font-weight: 600;
+  margin: 0;
+}
+
+.about .image-wrapper {
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .about .image-wrapper {
+    padding-left: 0;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .about .image-wrapper .images {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .about .image-wrapper .main-image {
+    margin-left: 0;
+  }
+}
+
+.about .image-wrapper .small-image {
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  width: 45%;
+  border: 8px solid var(--surface-color);
+}
+
+@media (max-width: 992px) {
+  .about .image-wrapper .small-image {
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
+  }
+}
+
+.about .image-wrapper .experience-badge {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  min-width: 200px;
+  animation: experience-float 3s ease-in-out infinite;
+}
+
+@media (max-width: 992px) {
+  .about .image-wrapper .experience-badge {
+    position: static;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+.about .image-wrapper .experience-badge h3 {
+  color: var(--contrast-color);
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 0.5;
+}
+
+.about .image-wrapper .experience-badge h3 span {
+  font-size: 1rem;
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+
+.about .image-wrapper .experience-badge p {
+  margin: 0.5rem 0 0;
+  font-size: 0.875rem;
+}
+
+@keyframes experience-float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <!-- <h1 class="sitename">Presento</h1> -->
+         <img src="assets/img/logo/logo-2.png" alt="">
+        <!-- <span>.</span> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <!-- <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="blog.html">Blog</a></li> -->
+          <li class="dropdown" class="active"><a href="Training.html"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Training.html">IT Training</a></li>
+             
+              <li><a href="recruitment.html">IT Recruitment</a></li>
+              <li><a href="consultancing.html">IT Consulting </a></li>
+              <li><a href="infrastructure.html">IT Infrastructure</a></li>
+              <li><a href="software.html">Software Development</a></li>
+
+            </ul>
+          </li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <!-- <li><a href="#contact">Contact</a></li> -->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="contact.html">Contact Us</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div id="particle-container"></div>
+
+      <img src="assets/img/111.png" alt="" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 data-aos="fade-up" data-aos-delay="100">Recruiting Excellence for Your Business</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Empowering your workforce with the best talent for sustained growth.</p>
+            <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+              <a href="#about" class="btn-get-started">Get Started</a>
+              <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    
+  
+
+    <!-- Events Section -->
+    <section id="events" class="events section">
+
+        <div class="container" data-aos="fade-up">
+          
+  
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/abt1-min.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Introduction to webdesign</a></h5>
+                  <!-- <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p> -->
+                  <p class="card-text">At Novel Nex Solutions, we are passionate about empowering individuals with cutting-edge knowledge and skills in the ever-evolving tech landscape. As a premier institution, we are dedicated to delivering top-tier training that transcends traditional boundaries, ensuring a meaningful and enjoyable learning experience.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/abt2-min.webp" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Marketing Strategies</a></h5>
+                  <!-- <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p> -->
+                  <p class="card-text">NXSolutions offers personalized recruitment services, tailoring our approach to meet the unique hiring needs of each client. We employ strategic sourcing methods to identify and attract top-tier talent, ensuring a pool of qualified candidates for our clients, from job profiling to candidate onboarding, we provide end-to-end recruitment services, streamlining the entire hiring process.</p>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+        </div>
+  
+      </section><!-- /Events Section -->
+
+  <!-- Call To Action Section -->
+  <section id="call-to-action" class="call-to-action section dark-background">
+
+    <img src="assets/img/cta-bg.jpg" alt="">
+
+    <div class="container">
+      <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-xl-10">
+          <div class="text-center">
+            <!-- <h3>Call To Action</h3> -->
+            <p>Our team of recruitment specialists possesses industry-specific knowledge, enabling us to understand the nuances of various sectors and source the right talent. Leveraging state-of-the-art recruitment technology, we enhance efficiency in candidate screening, assessment, and talent management. We extends our recruitment services globally, connecting clients with a diverse talent pool that transcends geographical boundaries.</p>
+            <!-- <a class="cta-btn" href="#">Call To Action</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- /Call To Action Section -->
+   <!-- Onfocus Section -->
+   <section id="onfocus" class="onfocusss section ">
+
+    <div class="container-fluid p-0" data-aos="fade-up">
+
+      <div class="row g-0">
+        <div class="col-lg-6 ">
+          <img src="assets/img/working-1.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="col-lg-6">
+          <div class="content d-flex flex-column justify-content-center h-100">
+            <!-- <h3>Voluptatem dignissimos provident quasi corporis</h3> -->
+            <p class="fst-italic">
+              We prioritize diversity and inclusion in our recruitment efforts, recognizing the importance of a varied and inclusive workforce for organizational success. We adapt to the evolving needs of businesses, offering flexible staffing solutions, including temporary, permanent, and project-based placements. Ensuring a positive candidate experience is at the core of our services, fostering strong employer branding and enhancing retention rates. Beyond recruitment, NXSolutions provides ongoing support, offering insights into market trends, salary benchmarks, and talent management strategies for sustained organizational success.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Prioritizing inclusive and varied workforces.</li>
+              <li><i class="bi bi-check-circle"></i> Offering temporary, permanent, and project-based placements.</li>
+              <li><i class="bi bi-check-circle"></i>Supporting retention with market trends and management strategies.</li>
+            </ul>
+          
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section><!-- /Onfocus Section -->
+   
+
+   
+
+  
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center" >
+          <a href="index.html" class="logo d-flex align-items-center" >
+            <!-- <span class="sitename">Presento</span> -->
+             <img src="assets/img/logo/logo.png" alt="" >
+          </a>
+          <div class="footer-contact pt-3">
+            <!-- <p>Welcome to NX Solutions, your reliable partner for comprehensive Recruitment, Training, and Consulting services. We take pride in providing tailored solutions that address the dynamic needs of today's business landscape.</p>
+            <p>New York, NY 535022</p> -->
+            <a href="tel:9452386549" id="infolink">
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 9452386549</span></p></a>
+           <a href="mailto:info@novelnexsolutions.com" id="infolink"> <p><strong>Email:</strong> <span>info@novelnexsolutions.com</span></p></a>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="Training.html">IT Training</a></li>
+            <li><a href="recruitment.html">IT Recruitment</a></li>
+            <li><a href="consultancing.html">IT Consulting</a></li>
+            <li><a href="infrastructure.html">IT Infrastructure</a></li>
+            <li><a href="software.html">Software Development</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Welcome to NX Solutions, your reliable partner for comprehensive Recruitment, Training, and Consulting services. We take pride in providing tailored solutions that address the dynamic needs of today's business landscape.</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Pyzon IT Solutions Pvt Ltd</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+
+  </footer>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
