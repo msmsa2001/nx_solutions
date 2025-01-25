@@ -814,7 +814,7 @@ section,
 .section-bg .container {
   position: relative;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
   .container{
   padding-right: 20px !important;
     padding-left: 20px !important;
