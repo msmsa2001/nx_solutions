@@ -26,6 +26,11 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+    <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
 
@@ -158,11 +163,12 @@
             width: 100%;
             padding: 0 10px;
             text-align: center;
-            display: flex;
+            /* display: flex;
             justify-content: center;
             align-items: center;
-            /* flex-direction: row; */
-            flex-wrap: wrap;
+            flex-wrap: wrap; */
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
         }
 
         .approach__item {
@@ -202,7 +208,7 @@
             font-size: 16px;
             color: #444;
             text-transform: uppercase;
-            margin-top: 10px;
+            margin: 12px 0;
         }
 
         .approach__item:hover .approach__title {
@@ -210,8 +216,8 @@
         }
 
         @media screen and (max-width:1200px) {
-            
-        
+
+
 
             .approach__item {
                 width: 100%;
@@ -231,11 +237,11 @@
         }
 
         @media screen and (max-width:900px) {
-            
-        
+
+
             .approach {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
             }
 
             .approach__item {
@@ -247,7 +253,7 @@
         @media screen and (max-width:500px) {
             .approach {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
             }
         }
 
@@ -483,9 +489,10 @@
             position: relative;
         }
 
-        #serviceContent p{
+        #serviceContent p {
             color: #fff;
         }
+
         .serviceNavigation input[type="radio"]:checked+label {
             background-color: rgba(0, 0, 0, 0) !important;
             font-weight: 900;
@@ -746,7 +753,7 @@
                             <li><a href="website.html">Website Development</a></li>
                             <li><a href="devOps.html">DevOps</a></li>
                             <li><a href="AI.html">AI</a></li>
-              
+
 
                         </ul>
                     </li>
@@ -768,19 +775,22 @@
         <section id="hero" class="hero section">
             <video class="video-background" autoplay muted loop playsinline>
                 <source src="assets/img/Video-bg/video11.mp4" type="video/mp4">
-              </video>
+            </video>
 
             <div class="container hero-section-text">
                 <!-- <div class="row"> -->
-                    <!-- <div class="col-lg-6"> -->
-                        <h2 data-aos="fade-up" data-aos-delay="100">From task automation to predictive insights, we deliver smarter</h2>
-                        <p data-aos="fade-up" data-aos-delay="200">Redefining Possibilities with AI-Powered Innovations, Transform your business with our AI solutions.</p>
-                        <div class="d-flex mt-4 hero-btn" data-aos="fade-up" data-aos-delay="300">
-                            <a href="about.html" class="btn-get-started">Get Started</a>
-                            <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
-                        </div>
+                <!-- <div class="col-lg-6"> -->
+                <h2 data-aos="fade-up" data-aos-delay="100">From task automation to predictive insights, we deliver
+                    smarter</h2>
+                <p data-aos="fade-up" data-aos-delay="200">Redefining Possibilities with AI-Powered Innovations,
+                    Transform your business with our AI solutions.</p>
+                <div class="d-flex mt-4 hero-btn" data-aos="fade-up" data-aos-delay="300">
+                              <a href="contact.html#contact" class="btn-get-started">Request a Free Consultation</a>
 
-                    <!-- </div> -->
+                    <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+                </div>
+
+                <!-- </div> -->
                 <!-- </div> -->
             </div>
 
@@ -795,24 +805,27 @@
 
                 <div class="row gy-4">
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <h3>Building Smarter Solutions with Custom AI Development</h3>
+                        <h3>Smart Solutions, Smarter Future – Powered by AI
+                        </h3>
                         <img src="assets/img/abt1-min.jpg" class="img-fluid rounded-4 mb-4" alt="">
-                        <!-- <p>Transform your business with tailored AI solutions that drive innovation, boost efficiency, and scale effortlessly.</p>
+                        <p style="font-style: italic; margin-bottom: 7px; font-weight: 700;" >Introduction to AI Benefits</p>
 
-              <p>Unlock your business potential with custom AI solutions designed to enhance efficiency, scalability, and innovation. From intelligent applications to seamless integrations, we deliver results that drive growth and success.</p> -->
+                        <p>Our AI solutions help businesses automate processes, predict trends, and unlock new insights.
+                            Whether it’s enhancing customer experiences, improving operations, or creating new products,
+                            AI is at the core of future success.</p>
                     </div>
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
                         <div class="content ps-0 ps-lg-5">
-
+                            <p class="fst-italic">
+                                Since AI is a priority, dedicate a section to explain how AI drives transformation in various industries and how your expertise in AI can deliver tangible business benefits.
+                </p>
                             <p>Transform your business with tailored AI solutions that drive innovation, boost
                                 efficiency, and scale effortlessly.</p>
 
                             <p>Unlock your business potential with custom AI solutions designed to enhance efficiency,
                                 scalability, and innovation. From intelligent applications to seamless integrations, we
                                 deliver results that drive growth and success.</p>
-                            <!-- <p class="fst-italic">
-                    Transform your online presence with our expert, custom website development services.
-                </p> -->
+
                             <ul>
                                 <li><i class="bi bi-check-circle-fill"></i> <span>Advanced AI applications designed for
                                         your business.</span></li>
@@ -820,7 +833,7 @@
                                         optimized performance.</span></li>
                                 <li><i class="bi bi-check-circle-fill"></i> <span>Custom AI solutions tailored to meet
                                         your specific objectives.</span></li>
-                                <li><i class="bi bi-check-circle-fill"></i> <span>ntelligent, user-focused experiences
+                                <li><i class="bi bi-check-circle-fill"></i> <span>Intelligent, user-focused experiences
                                         powered by AI.</span></li>
                                 <li><i class="bi bi-check-circle-fill"></i> <span>Scalable AI solutions ensuring
                                         consistent results across all platforms.
@@ -853,29 +866,29 @@
                     <h2>&#151; Services</h2>
                     <div class="service_select">
                         <span></span><input type="radio" name="services" value="marketing" id="marketing" /><label
-                            onclick="javascript:service('marketing');" for="marketing">AI Agent Development</label>
+                            onclick="javascript:service('marketing');" for="marketing">AI Strategy Consulting</label>
                     </div>
 
                     <div class="service_select">
 
                         <span></span>
                         <input type="radio" name="services" value="creative" id="creative" /><label
-                            onclick="javascript:service('creative');" for="creative">Consulting Services</label>
+                            onclick="javascript:service('creative');" for="creative">Custom AI Development</label>
                     </div>
 
                     <div class="service_select">
                         <span></span>
                         <input type="radio" name="services" value="branding" id="branding" /><label
-                            onclick="javascript:service('branding');" for="branding">AI Development</label>
+                            onclick="javascript:service('branding');" for="branding">ML & NLP</label>
                     </div>
 
                     <div class="service_select">
                         <span></span>
                         <input type="radio" name="services" value="service4" id="service4" />
-                        <label onclick="javascript:service('service4');" for="service4">Computer Vision</label>
+                        <label onclick="javascript:service('service4');" for="service4">AI-Driven Automation</label>
                     </div>
 
-                    <div class="service_select">
+                    <!-- <div class="service_select">
                         <span></span>
                         <input type="radio" name="services" value="service5" id="service5" />
                         <label onclick="javascript:service('service5');" for="service5">NLP</label>
@@ -891,7 +904,7 @@
                         <span></span>
                         <input type="radio" name="services" value="service7" id="service7" />
                         <label onclick="javascript:service('service7');" for="service7">Digital Products</label>
-                    </div>
+                    </div> -->
                 </div>
 
 
@@ -1051,53 +1064,71 @@
 
             </div><!-- End Section Title -->
             <ul class="approach">
-                <li class="approach__item">
+                <!-- <li class="approach__item">
                     <span class="approach__number">1</span>
                     <span class="approach__title">Use Case Identification</span>
-                    <!-- <span class="approach__subtitle">We analyse your problem and develop a strategy</span> -->
+                    <span class="approach__subtitle">We analyse your problem and develop a strategy</span>
                 </li>
 
                 <li class="approach__item">
                     <span class="approach__number">2</span>
                     <span class="approach__title">Data Integration & Feature Engineering</span>
-                    <!-- <span class="approach__subtitle">We analyse your problem and develop a strategy</span> -->
+                    <span class="approach__subtitle">We analyse your problem and develop a strategy</span>
                 </li>
 
                 <li class="approach__item">
                     <span class="approach__number">3</span>
                     <span class="approach__title">Data Engineering & Pipeline Automation</span>
-                    <!-- <span class="approach__subtitle">We analyse your problem and develop a strategy</span> -->
+                    <span class="approach__subtitle">We analyse your problem and develop a strategy</span>
                 </li>
 
                 <li class="approach__item">
                     <span class="approach__number">4</span>
                     <span class="approach__title">Model Selection & Deployment</span>
-                    <!-- <span class="approach__subtitle">We analyse your problem and develop a strategy</span> -->
+                    <span class="approach__subtitle">We analyse your problem and develop a strategy</span>
                 </li>
 
                 <li class="approach__item">
                     <span class="approach__number">5</span>
                     <span class="approach__title">Model Performance Optimization</span>
-                    <!-- <span class="approach__subtitle">We analyse your problem and develop a strategy</span> -->
+                    <span class="approach__subtitle">We analyse your problem and develop a strategy</span>
                 </li>
 
                 <li class="approach__item">
                     <span class="approach__number">6</span>
                     <span class="approach__title">Continuous Evaluation</span>
-                    <!-- <span class="approach__subtitle">We analyse your problem and develop a strategy</span> -->
+                    <span class="approach__subtitle">We analyse your problem and develop a strategy</span>
+                </li> -->
+
+                <li class="approach__item">
+                    <span class="approach__number">1</span>
+                    <span class="approach__title">Tailored Solutions</span><br>
+                    <span class="approach__subtitle">We understand that every business is unique. Our solutions are customized to address your specific challenges, particularly in harnessing the power of AI.</span>
+                </li>
+
+                <li class="approach__item">
+                    <span class="approach__number">2</span>
+                    <span class="approach__title">Collaborative Approach</span><br>
+                    <span class="approach__subtitle">We work closely with your team to understand your needs and craft strategies that integrate AI and other technologies for optimal results.</span>
+                </li>
+
+                <li class="approach__item">
+                    <span class="approach__number">3</span>
+                    <span class="approach__title">Results-Driven</span><br>
+                    <span class="approach__subtitle">From ideation to implementation, our focus is on delivering measurable business outcomes, particularly through AI-driven innovation.</span>
                 </li>
             </ul>
 
         </section><!-- /Services Section -->
 
- 
+
         <!-- comparision Section -->
         <div class="table-container">
             <!-- Section Title -->
- <div class="container section-title" data-aos="fade-up">
-    <h2>NovelNex Advantage – See where other AI agencies lag behind.</h2>
+            <div class="container section-title" data-aos="fade-up">
+                <h2>NovelNex Advantage – See where other AI agencies lag behind.</h2>
 
-</div><!-- End Section Title -->
+            </div><!-- End Section Title -->
             <table>
                 <thead>
                     <tr>
@@ -1168,7 +1199,74 @@
         <!-- /comparision Section -->
 
 
+  <!-- Testimonial Section -->
+  <section class="testimonials">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+     <h2>What Our Clients Say</h2>
+     <p>Real stories of success from businesses that have experienced the impact of our AI, DevOps, and software solutions.</p>
+   </div><!-- End Section Title -->
+   <div class="container">
 
+     <div class="row">
+       <div class="col-sm-12">
+         <div id="customers-testimonials" class="owl-carousel">
+
+           <!--TESTIMONIAL 1 -->
+           <div class="item">
+             <div class="shadow-effect">
+               <img class="img-circle" src="assets/img/clients/MCC.png"
+                 alt="">
+               <p>NovelNex's AI solutions revolutionized our operations. With their expertise, we reduced costs and boosted efficiency across our departments.</p>
+             </div>
+             <div class="testimonial-name">MCC</div>
+           </div>
+           <!--END OF TESTIMONIAL 1 -->
+           <!--TESTIMONIAL 2 -->
+           <div class="item">
+             <div class="shadow-effect">
+               <img class="img-circle" src="assets/img/clients/pyzon.png"
+                 alt="">
+               <p>The AI-driven approach from NovelNex significantly improved our customer engagement. We saw measurable growth in satisfaction and loyalty.</p>
+             </div>
+             <div class="testimonial-name">Pyzon</div>
+           </div>
+           <!--END OF TESTIMONIAL 2 -->
+           <!--TESTIMONIAL 3 -->
+           <div class="item">
+             <div class="shadow-effect">
+               <img class="img-circle" src="assets/img/clients/SH-Tech.png"
+                 alt="">
+               <p>Partnering with NovelNex helped us gain a competitive edge. Their seamless integration of AI with our systems was a game changer.</p>
+             </div>
+             <div class="testimonial-name">SH-Tech</div>
+           </div>
+           <!--END OF TESTIMONIAL 3 -->
+           <!--TESTIMONIAL 4 -->
+           <div class="item">
+             <div class="shadow-effect">
+               <img class="img-circle" src="assets/img/clients/Radiance.svg"
+                 alt="">
+               <p>NovelNex's DevOps solutions streamlined our development processes and improved collaboration across teams. Their expertise in automation and continuous integration has significantly boosted our productivity.</p>
+             </div>
+             <div class="testimonial-name">Radiance Academy</div>
+           </div>
+           <!--END OF TESTIMONIAL 4 -->
+           <!--TESTIMONIAL 5 -->
+           <div class="item">
+             <div class="shadow-effect">
+               <img class="img-circle" src="assets/img/clients/Leewayzon.png"
+                 alt="">
+               <p>NovelNex's AI solutions transformed our business. By integrating machine learning and predictive analytics, they helped us optimize operations and improve decision-making, driving significant growth.</p>
+             </div>
+             <div class="testimonial-name">Leewayzon</div>
+           </div>
+           <!--END OF TESTIMONIAL 5 -->
+         </div>
+       </div>
+     </div>
+   </div>
+ </section><!-- Testimonial Section -->
 
 
 
@@ -1273,6 +1371,9 @@
     <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
 
 
     <!-- Main JS File -->
@@ -1300,53 +1401,53 @@
                 background_image.style.backgroundColor = "#E03A3C";
                 service_content.style.color = '#fff';
                 service_content.style.color = "#ffffff";
-                service_title.innerHTML = "AI Agent Development";
-                service_content.innerHTML = "<h1>AI Agent Development</h1><p>Leverage intelligent AI agents powered by advanced LLMs to analyze complex scenarios, adapt to ever-changing environments, and execute tasks with precision. These agents drive operational excellence and empower businesses to make informed decisions.</p><ul><li>Context-Aware Decision-Making</li><li>Conversational Intelligence</li><li>Customizable Agent Architectures</li><li>Real-Time Adaptability</li></ul>";
+                service_title.innerHTML = "AI Strategy Consulting";
+                service_content.innerHTML = "<h1>AI Strategy Consulting</h1><p>Unlock the full potential of AI with expert strategy consulting designed to align AI solutions with your business goals. Our AI strategy services help you integrate artificial intelligence into your operations, ensuring sustainable growth, efficiency, and innovation.</p><ul><li>Tailored AI Roadmaps</li><li>Data-Driven Insights</li><li>Scalable AI Solutions</li><li>Strategic AI Integration</li></ul>";
 
             }
             if (the_service == 'creative') {
                 background_color.style.backgroundColor = "#FC8900";                 //background_image.style.color="#FF6517";
                 background_image.style.backgroundColor = "#FC8900";
-                service_title.innerHTML = "Consulting Services";
-                service_content.innerHTML = "<h1>Consulting Services</h1><p>Transform your AI vision into reality with our unmatched strategy and engineering expertise. We deliver responsible and tailored AI implementations, turning potential into tangible business value.</p><ul><li>AI Strategy Development</li><li>AI Roadmap Consulting</li><li>TCO and ROI Analysis for AI</li><li>Generative AI/LLM Implementation</li></ul>";
+                service_title.innerHTML = "Custom AI Development";
+                service_content.innerHTML = "<h1>Custom AI Solution Development</h1><p>Transform your business with AI solutions tailored to your unique needs. Our custom AI development services create innovative, high-performance AI models that address specific challenges, driving growth and operational efficiency.</p><ul><li>Bespoke AI Models</li><li>Seamless Integration</li><li>Scalable Architectures</li><li>Continuous Improvement</li></ul>";
             }
 
             if (the_service == 'branding') {
                 background_color.style.backgroundColor = "#E03A3C";
                 //background_image.style.color="#2D4473";
                 background_image.style.backgroundColor = "#E03A3C";
-                service_title.innerHTML = "AI Development";
-                service_content.innerHTML = "<h1>AI Development</h1><p>We specialize in fine-tuning large language models (LLMs) with your enterprise data, enabling personalized customer interactions, actionable insights, and smarter decision-making.</p><ul><li>AI Chatbot Development</li><li>LLM Integrations</li><li>Transformer-Based Models</li><li>Search Engine Development</li></ul>";
+                service_title.innerHTML = "Machine Learning and Natural Language Processing";
+                service_content.innerHTML = "<h1>AI Development</h1><p>Leverage advanced ML and NLP solutions to extract insights, automate processes, and enhance decision-making. Our expertise enables businesses to process vast amounts of data, improve customer interactions, and drive innovation.</p><ul><li>Forecast trends and optimize operations with AI-driven insights.</li><li>Automate tasks and improve efficiency using ML-powered solutions.</li><li>Enhance user experiences with chatbots and virtual assistants.</li><li>Analyze, understand, and generate human-like text and speech.</li></ul>";
 
             }
 
             if (the_service == 'service4') {
                 background_color.style.backgroundColor = "#FC8900"; // Example color
                 background_image.style.backgroundColor = "#FC8900";
-                service_title.innerHTML = "Computer Vision";
-                service_content.innerHTML = "<h1>Computer Vision</h1><p>Revolutionize visual data processing with cutting-edge computer vision solutions. From object detection to real-time video analysis, our expertise drives innovation in image and video processing technologies..</p><ul><li>Object Detection</li><li>Optical Character Recognition (OCR)</li><li>Image Segmentation</li><li>Object Tracking</li><li>Real-Time Video Analysis</li></ul>";
+                service_title.innerHTML = "AI for Automation & Optimization";
+                service_content.innerHTML = "<h1>AI for Business Automation & Process Optimization</h1><p>Streamline operations and enhance efficiency with AI-driven automation. Our solutions reduce manual effort, optimize workflows, and improve decision-making for smarter business processes.</p><ul><li>Workflow Automation</li><li>AI-Powered Decision Support</li><li>Process Optimization</li><li>Intelligent RPA</li></ul>";
             }
 
-            if (the_service == 'service5') {
-                background_color.style.backgroundColor = "#E03A3C"; // Example color
-                background_image.style.backgroundColor = "#E03A3C";
-                service_title.innerHTML = "NLP";
-                service_content.innerHTML = "<h1>Natural Language Processing (NLP)</h1><p>Unlock the potential of unstructured data with our advanced NLP solutions. Enhance customer interactions, automate communications, and derive meaningful insights for smarter operational outcomes.</p><ul><li>Sentiment Analysis</li><li>Named Entity Recognition</li><li>Text Classification</li><li>Text Summarization</li></ul>";
-            }
+            // if (the_service == 'service5') {
+            //     background_color.style.backgroundColor = "#E03A3C"; 
+            //     background_image.style.backgroundColor = "#E03A3C";
+            //     service_title.innerHTML = "NLP";
+            //     service_content.innerHTML = "<h1>Natural Language Processing (NLP)</h1><p>Unlock the potential of unstructured data with our advanced NLP solutions. Enhance customer interactions, automate communications, and derive meaningful insights for smarter operational outcomes.</p><ul><li>Sentiment Analysis</li><li>Named Entity Recognition</li><li>Text Classification</li><li>Text Summarization</li></ul>";
+            // }
 
-            if (the_service == 'service6') {
-                background_color.style.backgroundColor = "#FC8900"; // Example color
-                background_image.style.backgroundColor = "#FC8900";
-                service_title.innerHTML = "AI Developers";
-                service_content.innerHTML = "<h1>On-Demand AI Developers</h1><p>Access expert AI professionals ready to elevate your projects. Our AI developers ensure seamless technology integration to accelerate innovation and optimize processes for your business success.</p><ul><li>Data Analysts</li><li>Data Scientists</li><li>AI/ML Engineers</li><li>BI Developerss</li></ul>";
-            }
+            // if (the_service == 'service6') {
+            //     background_color.style.backgroundColor = "#FC8900"; 
+            //     background_image.style.backgroundColor = "#FC8900";
+            //     service_title.innerHTML = "AI Developers";
+            //     service_content.innerHTML = "<h1>On-Demand AI Developers</h1><p>Access expert AI professionals ready to elevate your projects. Our AI developers ensure seamless technology integration to accelerate innovation and optimize processes for your business success.</p><ul><li>Data Analysts</li><li>Data Scientists</li><li>AI/ML Engineers</li><li>AI Developerss</li></ul>";
+            // }
 
-            if (the_service == 'service7') {
-                background_color.style.backgroundColor = "#E03A3C"; // Example color
-                background_image.style.backgroundColor = "#E03A3C";
-                service_title.innerHTML = "Digital Products";
-                service_content.innerHTML = "<h1>AI-Powered Digital Products</h1><p>Description for Service 7.</p><ul><li>User Behavior Analysis</li><li>Clickstream Data Analysis</li><li>Utilitarian AI</li><li>Dynamic Personalization</li></ul>";
-            }
+            // if (the_service == 'service7') {
+            //     background_color.style.backgroundColor = "#E03A3C"; 
+            //     background_image.style.backgroundColor = "#E03A3C";
+            //     service_title.innerHTML = "Digital Products";
+            //     service_content.innerHTML = "<h1>AI-Powered Digital Products</h1><p>Description for Service 7.</p><ul><li>User Behavior Analysis</li><li>Clickstream Data Analysis</li><li>Utilitarian AI</li><li>Dynamic Personalization</li></ul>";
+            // }
 
         }
 
@@ -1379,6 +1480,34 @@
 
     </script>
 
+<script>
+    jQuery(document).ready(function ($) {
+"use strict";
+//  TESTIMONIALS CAROUSEL HOOK
+$("#customers-testimonials").owlCarousel({
+loop: true,
+center: true,
+items: 3,
+margin: 0,
+autoplay: true,
+dots: true,
+autoplayTimeout: 8500,
+smartSpeed: 450,
+responsive: {
+  0: {
+    items: 1
+  },
+  768: {
+    items: 2
+  },
+  1170: {
+    items: 3
+  }
+}
+});
+});
+
+  </script>
 </body>
 
 </html>
