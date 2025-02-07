@@ -161,9 +161,15 @@
    */
   document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
     faqItem.addEventListener('click', () => {
-      faqItem.parentNode.classList.toggle('faq-active');
+      // Pehle sabhi FAQ items ko band kar dein
+      document.querySelectorAll('.faq-item').forEach((item) => {
+        item.classList.remove('faq-active');
+      });
+      // Ab sirf click kiya gaya item khol dein
+      faqItem.parentNode.classList.add('faq-active');
     });
   });
+  
 
 })();
 
