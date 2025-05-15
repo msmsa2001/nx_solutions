@@ -3477,6 +3477,28 @@ p.awesome_line {
   margin: 0 auto;
 }
 
+
+.digital-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+@media (max-width: 992px) {
+  .digital-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .digital-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
 .process-card {
   background: var(--surface-color);
   border-radius: 16px;

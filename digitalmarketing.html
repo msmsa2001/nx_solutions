@@ -59,7 +59,7 @@
 
 @media (max-width: 992px) {
   .about .about-title {
-    font-size: 2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -80,7 +80,6 @@
 
 .about .feature-list li {
   display: flex;
-  align-items: center;
   gap: 0.75rem;
   margin-bottom: 1rem;
   font-size: 1rem;
@@ -229,6 +228,38 @@
     transform: translateY(0);
   }
 }
+
+
+.animated-gradient {
+      height: 300px;
+      background: linear-gradient(135deg, #ee4100 70%,  #1b1b1b  40%);
+      background-size: 400% 400%;
+      animation: gradientShift 5s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .section-with-bg {
+      height: 100vh;
+      background-image: url('assets/img/digitalmarketing.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
   </style>
 </head>
 
@@ -248,7 +279,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" >Home<br></a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html" class="active">About</a></li>
           <!-- <li><a href="#services">Services</a></li> -->
           <!-- <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
@@ -267,9 +298,10 @@
               <li><a href="cybersecurity.html">Cybersecurity </a></li>
               <li><a href="digitalmarketing.html">Digital Marketing </a></li>
 
+
             </ul>
           </li>
-          <li><a href="industries.html" class="active">Industries</a></li>
+          <li><a href="industries.html">Industries</a></li>
           <li><a href="careers.html">Careers</a></li>
           <!-- <li><a href="#contact">Contact</a></li> -->
         </ul>
@@ -284,15 +316,15 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <video class="video-background" autoplay muted loop playsinline>
-        <source src="assets/img/Video-bg/video3.mp4" type="video/mp4">
-      </video>
+    <section id="hero" class="hero section section-with-bg">
+      <!-- <video class="video-background" autoplay muted loop playsinline>
+        <source src="assets/img/Video-bg/video4.mp4" type="video/mp4">
+      </video> -->
+
       <div class="container hero-section-text">
         <!-- <div class="row"> -->
           <!-- <div class="col-lg-6"> -->
-            <h2 data-aos="fade-up" data-aos-delay="100">Industries</h2>
-            <p data-aos="fade-up" data-aos-delay="200">Tailored solutions for various industries, driving innovation and business success.</p>
+            <h2 data-aos="fade-up" data-aos-delay="100">DIGITAL MARKETING SERVICES</h2>
             <div class="d-flex mt-4 hero-btn" data-aos="fade-up" data-aos-delay="300">
                         <a href="contact.html#contact" class="btn-get-started">Request a Free Consultation</a>
 
@@ -305,104 +337,238 @@
 
     </section><!-- /Hero Section -->
 
-    
+      <!-- About Section -->
+      <section id="about" class="about section">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row gy-4 align-items-center justify-content-between">
+
+              <!-- <span class="about-meta">MORE ABOUT US</span> -->
+              <h2 class="about-title">Why Digital Marketing is Essential for Businesses</h2>
+              <p class="about-description">
+                <i class="bi bi-check2-all" style="color: red; font-size: 24px;"></i>
+                In today’s digital-first world, consumers don’t just search—they decide online. Whether youre a startup,
+local service provider, or established enterprise, your digital presence plays a critical role in how youre
+discovered, trusted, and chosen. Digital marketing empowers your business to connect with the right
+audience, drive meaningful engagement, and convert interest into action.
+                <br>
+                <br>
+
+              <i class="bi bi-check2-all" style="color: red; font-size: 24px;"></i>  At Novel Nex Solutions, we design data-driven, high-impact marketing strategies that help you compete
+and grow—online and offline.
+              </p>
+          </div>
+  
+        </div>
+  
+      </section><!-- /About Section -->
+
   
 
-  
-   <!-- Gallery Section -->
-   <section id="gallery" class="gallery section">
+       <section class="process-section">
+        <div class="container section-title">
+            <h2>Key Benefits of Digital Marketing</h2>
+        </div>
+        <div class="process-wrapper digital-wrapper">
 
-    <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+            <div class="process-card">
+                <div class="card-header">
+                    <span class="card-number">1</span>
+                </div>
+                <p class="card-title">Professional Website Development & SEO</p>
+                <p class="card-content">
+                   Your website is your digital storefront making the right impression.
 
-      <div class="row gy-4 justify-content-center">
-
-        <div class="col-xl-3 col-lg-4 col-md-6">
-          <div class="gallery-item h-100">
-            <img src="assets/img/gallery/1.jpg" class="img-fluid" alt="">
-            <div class="gallery-links d-flex align-items-center justify-content-center">
-              <a href="assets/img/gallery/1.jpg"  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              <!-- <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                   <ul>
+                    <li>Mobile-responsive, fast-loading designs for optimal user experience</li>
+                    <li>SEO-optimized pages that help you rank on Google</li>
+                    <li>Integrated features like appointment scheduling, live chat, and contact forms</li>
+                   </ul>
+                </p>
             </div>
-          </div>
-        </div><!-- End Gallery Item -->
 
-        <div class="col-xl-3 col-lg-4 col-md-6">
-          <div class="gallery-item h-100">
-            <img src="assets/img/gallery/2.jpg" class="img-fluid" alt="">
-            <div class="gallery-links d-flex align-items-center justify-content-center">
-              <a href="assets/img/gallery/2.jpg"  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              <!-- <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+            <div class="process-card">
+                <div class="card-header">
+                    <span class="card-number">2</span>
+                </div>
+                <p class="card-title">Local SEO & Google Business Optimization</p>
+                <p class="card-content">
+                   Be the first choice in your neighborhood.
+
+                   <ul>
+                    <li>Appear in “near me” searches on Google</li>
+                    <li>Google Business Profile setup and optimization (photos, hours, services, map location)</li>
+                    <li>Reviews, Q&As, and local content that build credibility</li>
+                   </ul>
+                </p>
             </div>
-          </div>
-        </div><!-- End Gallery Item -->
 
-        <div class="col-xl-3 col-lg-4 col-md-6">
-          <div class="gallery-item h-100">
-            <img src="assets/img/gallery/3.jpg" class="img-fluid" alt="">
-            <div class="gallery-links d-flex align-items-center justify-content-center">
-              <a href="assets/img/gallery/3.jpg"  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              <!-- <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+            <div class="process-card">
+                <div class="card-header">
+                    <span class="card-number">3</span>
+                </div>
+                <p class="card-title">Social Media Marketing</p>
+                <p class="card-content">
+                   Turn likes and follows into customer loyalty.
+
+                   <ul>
+                    <li>Strategic presence on Facebook, Instagram, LinkedIn, and more</li>
+                    <li>Regular content: Q&A posts, client stories, and product/service highlights</li>
+                    <li>Paid campaigns for promotions, awareness, and events</li>
+                   </ul>
+                </p>
             </div>
-          </div>
-        </div><!-- End Gallery Item -->
 
-        <div class="col-xl-3 col-lg-4 col-md-6">
-          <div class="gallery-item h-100">
-            <img src="assets/img/gallery/4.jpg" class="img-fluid" alt="">
-            <div class="gallery-links d-flex align-items-center justify-content-center">
-              <a href="assets/img/gallery/4.jpg"  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              <!-- <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+            <div class="process-card">
+                <div class="card-header">
+                    <span class="card-number">4</span>
+                </div>
+               <p class="card-title">Content Marketing & Blogging</p>
+                <p class="card-content">
+                   Build trust and authority through valuable content.
+
+                   <ul>
+                    <li>Informative blog posts on trending and evergreen topics</li>
+                    <li>Visuals like infographics, videos, and downloadable guides</li>
+                    <li>Newsletters and email campaigns to nurture leads and educate clients</li>
+                   </ul>
+                </p>
             </div>
-          </div>
-        </div><!-- End Gallery Item -->
 
-        <div class="col-xl-3 col-lg-4 col-md-6">
-          <div class="gallery-item h-100">
-            <img src="assets/img/gallery/5.jpg" class="img-fluid" alt="">
-            <div class="gallery-links d-flex align-items-center justify-content-center">
-              <a href="assets/img/gallery/5.jpg"  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              <!-- <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+            <div class="process-card">
+                <div class="card-header">
+                    <span class="card-number">5</span>
+                </div>
+               <p class="card-title">Online Reviews & Reputation Management</p>
+                <p class="card-content">
+                   Your reputation is your brand—protect and promote it.
+
+                   <ul>
+                    <li>Encourage positive reviews on Google, Yelp, and industry-specific platforms</li>
+                    <li>Monitor and respond to reviews professionally</li>
+                    <li>Reputation repair and credibility-building strategies</li>
+                   </ul>
+                </p>
             </div>
-          </div>
-        </div><!-- End Gallery Item -->
 
-        <div class="col-xl-3 col-lg-4 col-md-6">
-          <div class="gallery-item h-100">
-            <img src="assets/img/gallery/6.jpg" class="img-fluid" alt="">
-            <div class="gallery-links d-flex align-items-center justify-content-center">
-              <a href="assets/img/gallery/6.jpg"  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              <!-- <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+            <div class="process-card">
+                <div class="card-header">
+                    <span class="card-number">6</span>
+                </div>
+               <p class="card-title">Pay-Per-Click (PPC) Advertising</p>
+                <p class="card-content">
+                   Get in front of people actively searching for your services.
+
+                   <ul>
+                    <li>Google Ads targeting high-conversion keywords</li>
+                    <li>Facebook/Instagram ads for seasonal promotions or announcements</li>
+                    <li>Retargeting ads to re-engage visitors who didn’t convert the first time</li>
+                   </ul>
+                </p>
             </div>
-          </div>
-        </div><!-- End Gallery Item -->
 
-        <div class="col-xl-3 col-lg-4 col-md-6">
-          <div class="gallery-item h-100">
-            <img src="assets/img/gallery/7.jpg" class="img-fluid" alt="">
-            <div class="gallery-links d-flex align-items-center justify-content-center">
-              <a href="assets/img/gallery/7.jpg"  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              <!-- <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+
+            <div class="process-card">
+                <div class="card-header">
+                    <span class="card-number">7</span>
+                </div>
+               <p class="card-title">Video Marketing</p>
+                <p class="card-content">
+                   Visual storytelling that captures attention and builds trust.
+
+                   <ul>
+                    <li>Professional introduction videos and customer testimonials</li>
+                    <li>Short explainers to clarify services or processes</li>
+                    <li>Engaging reels, YouTube Shorts, and video ads</li>
+                   </ul>
+                </p>
             </div>
-          </div>
-        </div><!-- End Gallery Item -->
 
-        <div class="col-xl-3 col-lg-4 col-md-6">
-          <div class="gallery-item h-100">
-            <img src="assets/img/gallery/8.jpg" class="img-fluid" alt="">
-            <div class="gallery-links d-flex align-items-center justify-content-center">
-              <a href="assets/img/gallery/8.jpg"  class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-              <!-- <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-            </div>
-          </div>
-        </div><!-- End Gallery Item -->
 
+        </div>
+    </section>
+
+
+
+    <!-- Onfocus Section -->
+   <section id="onfocus" class="onfocusss section ">
+
+    <div class="container-fluid p-0" data-aos="fade-up">
+
+      <div class="row g-0">
+        <div class="col-lg-6 ">
+          <img src="assets/img/OfflineMarketing.png" alt="" style="width: 100%;">
+        </div>
+        <div class="col-lg-6">
+          <div class="content d-flex flex-column justify-content-center h-100 p-2">
+
+            <p class="card-title">Offline Marketing Strategies We Support Too</p>
+            <!-- <h3>Voluptatem dignissimos provident quasi corporis</h3> -->
+            <p class="fst-italic">
+              While digital is essential, traditional methods still make a powerful impact—especially when combined
+with your online efforts.
+              </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Professionally designed brochures, flyers, and promotional materials</li>
+              <li><i class="bi bi-check-circle"></i> Sponsorships and visibility at local events and community programs</li>
+              <li><i class="bi bi-check-circle"></i> Newspaper and magazine advertisements</li>
+              <li><i class="bi bi-check-circle"></i> Targeted direct mail campaigns</li>
+              <li><i class="bi bi-check-circle"></i> In-store signage and waiting area branding</li>
+            </ul>
+          
+          </div>
+        </div>
       </div>
 
     </div>
 
-  </section><!-- /Gallery Section -->
+  </section><!-- /Onfocus Section -->
+
+
+      <div class="container pt-5 pb-5">
+         
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Why Choose Novel Nex Solutions?</h3>
+               
+                <ul style="list-style: none;">
+                  <li><i class="bi bi-check2-all" style="color: red; font-size: 24px;"></i> <span>Experienced in both digital and traditional marketing for diverse industries</span></li>
+                  <li><i class="bi bi-check2-all" style="color: red; font-size: 24px;"></i> <span>Transparent, ethical, and results-focused strategies</span></li>
+                  <li><i class="bi bi-check2-all" style="color: red; font-size: 24px;"></i> <span>Real-time analytics and ROI tracking on all campaigns</span></li>
+                  <li><i class="bi bi-check2-all" style="color: red; font-size: 24px;"></i> <span>Personalized service—you’re more than just a client to us</span></li>
+                </ul>
+                <p>
+                 Ready to grow your business with digital marketing that delivers?
+                </p>
+
+                <p>
+                 Let’s build your brand, attract your audience, and drive results—together.
+                 <br>
+                 Contact us today at <a href="mailto:info@novelnexsolutions.com">info@novelnexsolutions.com</a> to schedule your free consultation.
+                </p>
+
+                <div class="hero-btn" data-aos="fade-up" data-aos-delay="300">
+                        <a href="contact.html#contact" class="btn-get-started">Request a Free Consultation</a>
+            </div>
+
+              </div>
+
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/whychooseus.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+      </div>
+  
+
  
- 
+   <!-- progress  -->
+    <div class="progress">
+
+    </div>
+   
+
+   
 
   
 
@@ -476,7 +642,8 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p> © Copyright <a href="https://novelnexsolutions.com/" target="_blank"> Novel Nex Solutions</a> All Rights Reserved </p>
+      <!-- <p> © Copyright <a href="https://novelnexsolutions.com/" target="_blank"> Novel Nex Solutions</a> All Rights Reserved </p> -->
+       <p> © Copyright <a href="https://novelnexsolutions.com/" target="_blank"> Novel Nex Solutions</a> All Rights Reserved </p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
@@ -500,7 +667,6 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
