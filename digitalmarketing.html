@@ -260,6 +260,73 @@
       color: white;
       font-family: Arial, sans-serif;
     }
+
+
+     section.process-section {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #f4f7fa;
+    }
+
+    .process-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .process-wrapper-box {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .step {
+      display: flex;
+      background: white;
+      border-left: 5px solid #e03a3c;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .step-number {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e03a3c;
+      min-width: 40px;
+    }
+
+    .step-content {
+      flex: 1;
+    }
+
+    .step-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .step-desc {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .step {
+        flex-direction: column;
+      }
+
+      .step-number {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
   </style>
 </head>
 
@@ -374,7 +441,7 @@ and grow—online and offline.
 
             <div class="process-card">
                 <div class="card-header">
-                    <span class="card-number">1</span>
+                    <span class=" ">1</span>
                 </div>
                 <p class="card-title">Professional Website Development & SEO</p>
                 <p class="card-content">
@@ -490,6 +557,56 @@ and grow—online and offline.
     </section>
 
 
+ <section class="process-section">
+    <h2>Our Step-by-Step Digital Marketing Process</h2>
+
+    <div class="process-wrapper-box">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <div class="step-title">Initial Consultation</div>
+          <div class="step-desc">We understand your business goals, target audience, and competitive landscape.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <div class="step-title">Audit & Strategy Development</div>
+          <div class="step-desc">We evaluate your current digital presence and build a custom, goal-driven marketing plan.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <div class="step-title">Setup & Branding</div>
+          <div class="step-desc">From websites to social profiles, we ensure brand consistency and optimization across platforms.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <div class="step-title">Content Creation & Campaign Launch</div>
+          <div class="step-desc">We develop branded content—blogs, ads, videos—and launch your digital campaigns.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <div class="step-title">Customer Engagement & Lead Generation</div>
+          <div class="step-desc">We drive traffic, generate leads, and help convert them into loyal customers.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">6</div>
+        <div class="step-content">
+          <div class="step-title">Analytics & Reporting</div>
+          <div class="step-desc">Monthly performance reports with actionable insights on ROI, growth, and engagement.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
     <!-- Onfocus Section -->
    <section id="onfocus" class="onfocusss section ">
@@ -503,7 +620,7 @@ and grow—online and offline.
         <div class="col-lg-6">
           <div class="content d-flex flex-column justify-content-center h-100 p-2">
 
-            <p class="card-title">Offline Marketing Strategies We Support Too</p>
+            <h3>Offline Marketing Strategies We Support Too</h3>
             <!-- <h3>Voluptatem dignissimos provident quasi corporis</h3> -->
             <p class="fst-italic">
               While digital is essential, traditional methods still make a powerful impact—especially when combined
